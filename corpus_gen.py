@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-with open('bank_faqs.json') as f:
+with open('faqs.json') as f:
     data = json.load(f)
 
 data = data['bank']
@@ -21,4 +21,4 @@ bank_faq['Question'] = pd.Series(questions)
 bank_faq['Answer'] = pd.Series(answers)
 bank_faq['Class'] = pd.Series(classes)
 
-bank_faq.to_csv("BankFAQs.csv", index=False)
+bank_faq.to_csv("FAQ.csv", index=False)

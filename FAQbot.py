@@ -24,7 +24,7 @@ le = LE()
 
 tfv = TfidfVectorizer(min_df=1, stop_words='english')
 
-data = pd.read_csv('BankFAQs.csv')
+data = pd.read_csv('FAQ.csv')
 questions = data['Question'].values
 
 X = []
